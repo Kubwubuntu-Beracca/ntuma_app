@@ -1,3 +1,9 @@
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, non_constant_identifier_names, prefer_typing_uninitialized_variables
+
+import 'package:delivery_app/screens/login_screen.dart';
+import 'package:delivery_app/screens/order_screen.dart';
+import 'package:delivery_app/screens/profile_screen.dart';
+import 'package:delivery_app/screens/setting_screen.dart';
 import 'package:delivery_app/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +23,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      //home: const SplashScreen(),
+      routes: {
+        '/': (ctx) => const SplashScreen(),
+        OrderScreen.routeName: (ctx) => OrderScreen(),
+        ProfileScreen.routeName: (ctx) => const ProfileScreen(),
+        SettingScreen.routeName: (ctx) => SettingScreen(),
+        LoginScreen.routeName: (ctx) => const LoginScreen()
+      },
     );
   }
 }

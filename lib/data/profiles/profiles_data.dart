@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:delivery_app/models/profile.dart';
 
 // ignore: unnecessary_const

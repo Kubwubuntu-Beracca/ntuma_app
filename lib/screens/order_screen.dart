@@ -1,21 +1,19 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, prefer_const_literals_to_create_immutables, prefer_typing_uninitialized_variables, unused_local_variable, unused_field
 
 import 'package:delivery_app/data/order_info.dart';
-import 'package:delivery_app/widgets/menu/my_drawer_header.dart';
-import 'package:delivery_app/widgets/menu/my_drawer_list.dart';
+import 'package:delivery_app/widgets/main_drawer.dart';
 import 'package:delivery_app/widgets/order_card.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class OrderScreen extends StatefulWidget {
+  static const routeName = '/oders';
+  const OrderScreen({Key? key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _OrderScreenState createState() => _OrderScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
-  get address => null;
-
+class _OrderScreenState extends State<OrderScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,18 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(
                   fontWeight: FontWeight.bold, color: Colors.red, fontSize: 20),
             )),
-        drawer: Drawer(
-          child: SingleChildScrollView(
-            child: Container(
-              child: Column(
-                children: [
-                  MyHeaderDraweWidget(),
-                  MyDrawerListWidget(),
-                ],
-              ),
-            ),
-          ),
-        ),
+        drawer: MainDrawer(),
         body: ListView.separated(
             itemBuilder: (BuildContext context, index) {
               return Container(

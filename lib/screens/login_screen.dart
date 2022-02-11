@@ -1,15 +1,16 @@
 // ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers, sized_box_for_whitespace, prefer_const_literals_to_create_immutables, unnecessary_import, implementation_imports
 
-import 'package:delivery_app/screens/home_screen.dart';
+import 'package:delivery_app/screens/order_screen.dart';
 import 'package:delivery_app/widgets/background_image.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
+  static const routeName = '/login';
   const LoginScreen({Key? key}) : super(key: key);
 
   void goTohomeScreen(BuildContext ctx) {
-    Navigator.of(ctx)
-        .push(MaterialPageRoute(builder: (context) => const HomeScreen()));
+    Navigator.of(ctx).pushReplacement(
+        MaterialPageRoute(builder: (context) => const OrderScreen()));
   }
 
   @override
