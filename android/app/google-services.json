@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "77245799979",
+    "project_id": "fleurdor",
+    "storage_bucket": "fleurdor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77245799979:android:fc2615a315ded15826546e",
+        "android_client_info": {
+          "package_name": "com.example.delivery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77245799979-j02dvihik9lsgtg2c789edg3fb0pud3e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEBtkK0LzWUEaw3q6H7EVgcpeO0ZTumcg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77245799979-j02dvihik9lsgtg2c789edg3fb0pud3e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
