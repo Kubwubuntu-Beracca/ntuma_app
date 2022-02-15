@@ -2,6 +2,7 @@
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:delivery_app/screens/login_screen.dart';
+import 'package:delivery_app/screens/order_screen.dart';
 import 'package:delivery_app/widgets/background_image.dart';
 import 'package:delivery_app/widgets/splash.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,7 @@ class SplashScreen extends StatelessWidget {
         body: AnimatedSplashScreen(
           backgroundColor: Colors.transparent,
           splash: SplashWidget(),
-          nextScreen: LoginScreen(),
+          nextScreen: OrderScreen(),
           duration: 4000,
           splashTransition: SplashTransition.sizeTransition,
           pageTransitionType: PageTransitionType.rightToLeft,
